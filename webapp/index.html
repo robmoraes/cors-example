@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de integração com CORS</title>
+</head>
+<body>
+	<h1>Exemplo de integração com CORS</h1>
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$.ajax({
+				
+				method: 'GET',
+				url: 'http://127.0.0.1:8100/pensamentos.php',
+				headers: {
+					'x-token' : 'Esse é meu token super seguro.',
+					'x-other' : 'Esse é outro parâmetro.'
+				}
+
+			}).done(function(response){
+				console.log('sucesso');
+				console.log(response);
+
+			}).fail(function(error){
+				console.log('erro');
+				console.log(error);
+			});
+
+		});
+	</script>
+</body>
+</html>
