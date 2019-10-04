@@ -1,5 +1,10 @@
 # README #
 
-Esse projeto é um exemplo de um vídeo artigo sobre integração de aplicações web usando compartilhamento de recursos de origem cruzada ou cross-origin resource sharing (CORS).
+Exemplo sobre integração de aplicações web usando compartilhamento de recursos de origem cruzada ou cross-origin resource sharing (CORS).
 
-* [Veja o vídeo](http://multiverso.in/dev/cors-com-php-html-javascript-jquery)
+* [Veja o vídeo](https://www.youtube.com/watch?v=eWYqdug5ebA&t=1s)
+
+No vídeo
+
+- Código PHP simulando um webservice que recebe parametros de Header.
+- Código HTML e Javascript em domínio diferente para consumir o webservice com passagem de parâmetros no Header.
