@@ -1,8 +1,8 @@
 <?php 
 namespace Helper;
 
-class Util {
-
+class Util
+{
 	// Lista de origens permitidas
 	public static $whiteList = [
 		// 'http://127.0.0.2:8000',
@@ -11,9 +11,8 @@ class Util {
 
 	// Esse método valida a origem e retorna
 	// a mesma caso seja permitida
-	public static function getOriginAllowed($origin){
-
-		if ( in_array($origin, self::$whiteList) ) {
+	public static function getOriginAllowed($origin) {
+		if (in_array($origin, self::$whiteList)) {
 			return $origin;			
 		}
 
@@ -21,7 +20,5 @@ class Util {
 		// o método retorna o domínio da própria API
 		// bloqueando qualquer requisição de outra origem
 		return 'http://127.0.0.1:8100';
-
 	}
-
 }
