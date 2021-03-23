@@ -9,26 +9,19 @@
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 
 	<script type="text/javascript">
-		$(document).ready(function(){
-			
+		$(document).ready(function () {
 			$.ajax({
-				
 				method: 'GET',
 				url: 'http://127.0.0.1:8100/pensamentos.php',
 				headers: {
 					'x-token' : 'Esse é meu token super seguro.',
 					'x-other' : 'Esse é outro parâmetro.'
 				}
-
-			}).done(function(response){
-				console.log('sucesso');
-				console.log(response);
-
-			}).fail(function(error){
-				console.log('erro');
-				console.log(error);
+			}).done(function (response) {
+				console.log('sucesso', response);
+			}).fail(function (error) {
+				console.log('erro', error);
 			});
-
 		});
 	</script>
 </body>
